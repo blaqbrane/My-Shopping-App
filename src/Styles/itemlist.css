@@ -1,0 +1,76 @@
+*{
+    border:0;
+    margin:0;
+    font-family: sans-serif;
+}
+section{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin:auto;
+    margin-top:5%;
+    width:80%
+}
+.itemcard--container{
+    width:300px;
+    padding: 20px;
+}
+
+.itemcard--container:hover{
+    cursor:pointer;
+    box-shadow:0 7px 7px 7px rgb(239, 233, 233);
+    border-radius: 5px;
+}
+
+.itemcard--img img{
+    width:295px;
+    height: 340px;
+    border-radius: 6px;
+}
+
+.itemcard--author{
+    color:gray;
+    font-size: 0.9rem;
+}
+.itemcard--detail p{
+    color:gray;
+    font-size:0.9rem;
+}
+.itemcard--detail button{
+    padding: 10px;
+    background: linear-gradient(90deg,#A62663 1.18%,#672280 100%);
+    color:white;
+    border-radius:5px;
+    border:none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+                /* MEDIA QUERIES FOR SMALL DEVICES */
+@media ( max-width: 376px ) {
+    section{
+       display:grid;
+       grid-template-columns:repeat(2,1fr) ;
+       grid-template-rows: auto;
+       margin-top: 20%;
+       margin-left:5px ;
+       width:85%;
+       padding: 1px;
+    } 
+    .itemcard--container{
+        width:143px;
+        padding: 15px;
+        justify-content: center; 
+        margin-top: 20px;
+    }
+    .itemcard--img img{
+        width:120px;
+        height: 100px;
+        border-radius: 6px;
+    }
+    .itemcard--detail h2{
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+  }

@@ -1,0 +1,126 @@
+*{
+    border:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+.added--container{
+    width:70%;
+    margin: auto;
+    margin-top: 100px;
+}
+.cart--container{
+    display:flex;
+    align-items: center;
+    margin-top:5%;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 4px;
+    border-radius: 6px;
+}
+.cart--container:hover{
+    box-shadow: 1px 2px 3px gray;
+}
+.cart--img img{
+    width:60px;
+    height: 60px;
+    border-radius: 9px;
+    margin-left: 4px;
+}
+.cart--img{
+    display: flex;
+    align-items: center;
+    width: 390px;
+}
+.cart--img p{
+    font-weight: bold;
+    margin-left: 10px;
+    color:#672280;
+}
+.btn--add{
+    padding:5px 10px;
+    font-weight: bold;
+    margin-right: 4px;
+    border-radius: 1px;
+}
+.btn--subtract{
+    padding:5px 10px;
+    font-weight: bold;
+    margin-right: 4px;
+    border-radius: 1px;
+}.btn--num{
+    padding:5px 10px;
+    font-weight: bold;
+    margin-right: 4px;
+    border-radius: 1px;
+}
+.price--delete button{
+    background: linear-gradient(90deg,#A62663 1.18%,#672280 100%);
+    padding:8px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    outline:none;
+    cursor:pointer;
+    margin-right:2px;
+}
+.price--delete span{
+    margin-right:5px;
+}
+.cart--total{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.span--text{
+    letter-spacing: 2px;
+    font-weight:bold;
+    font-size: 2rem;
+    color: #A62663;
+}
+.span--price{
+    letter-spacing: 2px;
+    font-weight:bold;
+    font-size: 2rem;
+    color:#672280
+}
+.zero--item{
+    margin-top: 260px;
+    letter-spacing: 2px;
+    font-weight:bold;
+    font-size: 2rem;
+    color:#672280;
+    cursor:pointer;
+}
+                /* MEDIA QUERIES FOR SMALL DEVICE */
+@media(max-width:376px) {
+    .added--container{
+        width:90%;
+        margin:0;
+        margin-top: 100px;
+    }
+    .cart--container{
+        width: 348px;
+        margin-left: 5px;
+    }
+    .price--delete{
+        display: flex;
+        align-items: center;
+    }
+    .btn{
+        display: flex;
+    }
+    .cart--img p {
+        font-size: 0.7rem;
+        margin-left: 2px;
+    }
+    .span--text{
+        letter-spacing: 2px;
+        font-weight:bold;
+        font-size: 1.1rem;  
+    }
+    .span--price{
+        font-size: 1.5rem;
+        
+    }
+}

@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    border:0;
+    font-family: sans-serif;
+}
+
+nav{
+    background:linear-gradient(90deg,#A62663 1.18%,#672280 100%);
+    width: 100%; 
+    position: fixed;
+    top:0;
+}
+.nav--container{
+    display:flex;
+    justify-content:space-between;
+    margin: auto;
+    align-items:center;
+    padding:20px;
+    width:90%
+}
+.nav--container h2{
+    color:white;
+}
+.nav--icon{
+    color:white;
+    cursor: pointer; 
+}
+
+.nav--item{
+    background: red;
+    color:white;
+    position: relative;
+    top:-10px;
+    border-radius: 2px;
+    padding: 2px;
+}
+ 
+                  /* MEDIA QUERIES FOR SMALL DEVICES */
+@media ( max-width: 376px ) {
+  nav{
+    width:100%;
+    position: fixed;
+    top:0;
+  }  
+}
